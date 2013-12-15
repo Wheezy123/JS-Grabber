@@ -8,7 +8,7 @@ table, which is sortable in both ascending and descending order.
 
 To use, make sure to grab the sort_table.js file and include it into your HTML page.  Next, you will need to
 create the beginnings of a table.  Create an opening table tag, and place your headings within <thead> tags.
-Here is an example of what you need to get started with your table:
+You'll also need to open a <tbody> tag.  Here is an example of what you need to get started with your table:
 
 <table id="YourTable">
 	<thead>
