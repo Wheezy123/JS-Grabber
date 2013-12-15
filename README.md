@@ -10,7 +10,7 @@ To use, make sure to grab the sort_table.js file and include it into your HTML p
 create the beginnings of a table.  Create an opening table tag, and place your headings within <thead> tags.
 Here is an example of what you need to get started with your table:
 
-  <table id="YourTable">
+<table id="YourTable">
 	<thead>
 		<tr>
 			<th>First Header</th>
