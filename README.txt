@@ -12,10 +12,10 @@ You'll also need to open a <tbody> tag.  Here is an example of what you need to 
 
 <table id="YourTable">
 	<thead>
-		<tr>
-			<th>First Header</th>
-			<th>Second Header</th>
-			<th>Third Header</th>
+	<tr>
+		<th>First Header</th>
+		<th>Second Header</th>
+		<th>Third Header</th>
 	</thead>
 	<tbody>
 
