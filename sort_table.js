@@ -3,7 +3,9 @@ $(document).ready(function(){
     $.getJSON("json_data.json",
     function (data) {
         var tr;
-
+        // This loop creates and appends table rows. Each line is creating
+        // a new row according to whatever is called by data[i].xxx
+        // See notes below for more
       for (var i = 0; i < data.length; i++) {
           tr = $('<tr/>');
           // *You will  have to change each </td> row for this to work
