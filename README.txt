@@ -18,6 +18,9 @@ You'll also need to open a <tbody> tag.  Here is an example of what you need to 
 		<th>Third Header</th>
 	</thead>
 	<tbody>
+	
+You'll also have to make sure to change the values of the tr.append method in the first loop of the sort_table.js
+file.  This loop is commented with further directions.
 
 
 Thats it! Let JS-Grabber do the rest, it will import your JSON data and populate the rest of the HTML table.
