@@ -6,6 +6,9 @@ $(document).ready(function(){
 
       for (var i = 0; i < data.length; i++) {
           tr = $('<tr/>');
+          // *You will  have to change each </td> row for this to work
+          // Change each method after data[i] to reflect your table headers
+          // for example, if you had a th called 'names', use data[i].names
           tr.append("<td>" + data[i].carrierName + "</td>");
           tr.append("<td>" + data[i].planName + "</td>");
           tr.append("<td>" + "$" + data[i].copay + "</td>");
@@ -93,16 +96,16 @@ $(document).ready(function(){
 		})
 	}
 
-		function makeSortable(table) {
-		    var th = table.tHead, i;
-		    th && (th = th.rows[0]) && (th = th.cells);
-		    if (th) i = th.length;
-		    else return; // if no `<thead>` then do nothing
-		    while (--i >= 0) (function (i) {
-		        var dir = 1;
-		        th[i].addEventListener('click', function () {sortTable(table, i, (dir = 1 - dir))});
-		    }(i));
-		}
+	function makeSortable(table) {
+	    var th = table.tHead, i;
+	    th && (th = th.rows[0]) && (th = th.cells);
+	    if (th) i = th.length;
+	    else return; // if no `<thead>` then do nothing
+	    while (--i >= 0) (function (i) {
+	        var dir = 1;
+	        th[i].addEventListener('click', function () {sortTable(table, i, (dir = 1 - dir))});
+	    }(i));
+	}
 
 	
 		function makeAllSortable(parent) {
